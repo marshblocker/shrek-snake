@@ -3,13 +3,13 @@ import random
 WIDTH: int = 100
 
 moves: list[str] = ["straight_short", "straight_long", 
-		 			"bend_left_short", "bend_left_long",
-		 			"bend_right_short", "bend_right_long"]
+		    "bend_left_short", "bend_left_long",
+		    "bend_right_short", "bend_right_long"]
 
-f = open("shrek.txt", mode= 'r')
+f = open("shrek.txt", mode= 'r')	# Make sure 'shrek.txt' is in the same directory.
 
 
-def will_hit_edge(move:str, pos: int) -> bool:
+def will_hit_edge(move: str, pos: int) -> bool:
 	match move:
 		case "bend_left_short":
 			pos -= 1
