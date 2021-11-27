@@ -47,12 +47,14 @@ def draw_snake_segment(pos: int, move: str) -> int:
 			print(left_whitespace + "\\``\\" + f.readline().rstrip("\n"))
 			print(left_whitespace + " " + "|``|" + f.readline().rstrip("\n"))
 			pos += 1
+			
 		case "bend_right_long":
 			print(left_whitespace + "\\``\\" + f.readline().rstrip("\n"))
 			print(left_whitespace + " " + "\\``\\" + f.readline().rstrip("\n"))
 			pos += 2
 
 	return pos
+
 
 def main():
 	pos: int = random.randint(2, WIDTH-2)
